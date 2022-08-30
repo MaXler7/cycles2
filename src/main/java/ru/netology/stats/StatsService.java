@@ -45,10 +45,6 @@ public class StatsService {
 
     public int testLessThanAvgMonths(int[] sales) {
         int monthsAmount = 0;
-        int sum = 0;
-        for (int monthSale : sales) {
-            sum += monthSale;
-        }
         for (int monthSale : sales) {
             if (monthSale < calculateAvg(sales)) {
                 monthsAmount += 1;
@@ -59,11 +55,6 @@ public class StatsService {
 
     public int testMoreThanAvgMonths(int[] sales) {
         int monthsAmount = 0;
-        int sum = 0;
-        for (int monthSale : sales) {
-            sum += monthSale;
-        }
-
         for (int monthSale : sales) {
             if (monthSale > calculateAvg(sales)) {
                 monthsAmount += 1;
